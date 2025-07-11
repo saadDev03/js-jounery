@@ -15,7 +15,7 @@ y = 10
 
 // primmitive  it store onle one value at a time 
 // it store value directly 
-// each value has its own memory location  
+// Each variable has its own memory location  
 // it store in stack memeory
 // changing one variable does not effect other
 // it compare value 
@@ -23,7 +23,7 @@ y = 10
 
 //non-primitive 
 // it store the reference
-// each variable has one memeory location  
+// Each variable holds a reference to the same memory location.” 
 // it compare reference
 
 
