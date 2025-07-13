@@ -93,14 +93,23 @@ y = 3
 
 // User-defined Function
 // A function that you create yourself.
+//parameter A parameter is a variable in a function definition that receives a value.
+//An argument is the actual value you pass to a function when calling or invoked  it.
  
- function sum( x , y ) {
-     console.log(x + y );
+
+
+ function sum( x , y ) { 
+      return  x + y ;
+      
+      
      
-    
  }
 
-  sum(4 );
+  let  value = sum(55 , 567) ;
+  console.log(value);
+  
+
+ 
   
  
  
