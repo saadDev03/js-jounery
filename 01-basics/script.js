@@ -81,15 +81,29 @@ y = 3
 // How to call	        Just use the name: greet()	                           Use the object: person.sayHello()
 // Example	            function greet() { }	                                  person.sayHello = function() { }
 
- let str1 = new String("helo world") ;
- 
-
- console.log(str1[2]);
- 
- 
+  //+++++++++++++++++++++++++++++++FUNCTON++++++++++++++++++++++++++++++++++++// 
+  //FUNCTION is block of code that perform a particular task when we call it 
    
+// Built-in Function
+// A function that is already provided by JavaScript.
+// console.log("hello");
+// "abc".toUpperCase()
+// [a ,b ,c].push(b)
+// alert("danger")
 
+// User-defined Function
+// A function that you create yourself.
+ 
+ function sum( x , y ) {
+     console.log(x + y );
+     
+    
+ }
 
+  sum(4 );
+  
+ 
+ 
 
 
 
