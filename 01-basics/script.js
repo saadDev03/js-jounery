@@ -86,8 +86,22 @@ y = 3
 //  if give negative value javascript covert to zero automatically
 // it is same as slice it take two parameter the start position and the differece is the second parameter take lenght of exerted par  
 //Length means how many characters to take — not where to stop.
-let text = "Hello World ";
- console.log(text.toWellFormed()) ;
+// padstart is used to add extra  text before of string (lenght , "string")
+// padend is used to add extra text after of string 
+//padding mean addind extra character to a string 
+// padStart() look the size of original string writeen the string written
+//  inside variable or directly it check the how long string then add padding if need 
+
+
+// let text =    "hello"    ;
+
+//  console.log(text.padStart(8 , "add")) ;
+
+
+// let text =    "hello"    ;
+
+//  console.log(text.padEnd(8 , "add")) ;
+
 
 
 
@@ -112,14 +126,14 @@ let text = "Hello World ";
  
 
 
- function sum( x , y ) { 
-      return  x + y ;
+//  function sum( x , y ) { 
+//       return  x + y ;
       
       
      
- }
+//  }
 
-  let  value = sum(55 , 567) ;
+//   let  value = sum(55 , 567) ;
   
 
  
