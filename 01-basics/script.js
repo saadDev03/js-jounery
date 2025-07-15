@@ -81,6 +81,20 @@ y = 3
 // How to call	        Just use the name: greet()	                           Use the object: person.sayHello()
 // Example	            function greet() { }	                                  person.sayHello = function() { }
 
+//Metod for extacting charatcter charat ,charcodeat, charcodepoint , at '
+// For extarting part slice , substring, substr(old)==> slice, it cancont swap the value , it support negative value   , substing it swap the value ,
+//  if give negative value javascript covert to zero automatically
+// it is same as slice it take two parameter the start position and the differece is the second parameter take lenght of exerted par  
+//Length means how many characters to take — not where to stop.
+let text = "Hello World ";
+ console.log(text.toWellFormed()) ;
+
+
+
+
+
+
+
   //+++++++++++++++++++++++++++++++FUNCTON++++++++++++++++++++++++++++++++++++// 
   //FUNCTION is block of code that perform a particular task when we call it 
    
@@ -106,11 +120,12 @@ y = 3
  }
 
   let  value = sum(55 , 567) ;
-  console.log(value);
   
 
  
   
+
+
  
  
 
