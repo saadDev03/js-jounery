@@ -86,7 +86,7 @@ y = 3
 //  if give negative value javascript covert to zero automatically
 // it is same as slice it take two parameter the start position and the differece is the second parameter take lenght of exerted par  
 //Length means how many characters to take — not where to stop.
-// padstart is used to add extra  text before of string (lenght , "string")
+// ==> padstart is used to add extra  text before of string (lenght , "string")
 // padend is used to add extra text after of string 
 //padding mean addind extra character to a string 
 // padStart() look the size of original string writeen the string written
@@ -101,6 +101,64 @@ y = 3
 // let text =    "hello"    ;
 
 //  console.log(text.padEnd(8 , "add")) ;
+
+// ==> repaet method repeat the string multiple times 
+
+// let rep = "abc"  ;
+// console.log(rep.repeat("abc"));
+
+//==> replace method it can  find the part of  string and change it something else ti has two parameter (search value , new value) 
+// it can  only change the first match 
+
+
+// let replace = "hellhellhello" ;
+// console.log(rep;ace.replace( "hell" , "P") );
+
+
+//  the replaceAll it can change all match
+
+// let replace = "hellhellhello" ;
+// console.log(replace.replaceAll( "hell" , "P") );
+
+// ==> split method is used to convert string into array based on "space" , "," , "e" space , symbol , character split mean  brak 
+// the string into smaller  part and put them  into  the array it has two parameter (seperator , lenght) lenght mean how many
+// value ti return 
+
+// let spli_string = "heelo  , byy , word"
+// console.log(spli_string.split("," , 3));
+
+// ==> include is used to check if a string contain a word , letter or a part it return true or false 
+
+
+// let score = "ten , tewenty"
+
+// console.log(score.includes("good"));
+
+//++++++++++++++++++++++++++++++++++++Sting Search Method++++++++++++++++++++++++++++++++++++++++++++++++++++++++// 
+//==> indexof check left to right and gives the first mathing posion 
+// let var_name = "hello ,hello" ;
+// console.log(var_name.indexOf("h"));
+
+//==> it chech from right to left and give last matching position
+// let last = "back ,bakward"
+// console.log(last.lastIndexOf("b"));
+
+//==.SEARCH METHOD it check left to right and give position of first match it more powerful than index it can also 
+//  regular  expression to search  
+ 
+// let text = "Please locate where 'locate' occurs!";
+// text.search(/locate/);
+
+//match method find part of string and return them into array it can used regexp
+//If a regular expression does not include the g modifier (global search), match give output like
+//  match object it is a special type of array give extra information ,  
+// match() will return only the first match in the string.
+let match_var = "The rain in SPAIN stays mainly in the plain" ;
+let result = match_var.matchAll("ain")
+console.log([...result]);
+
+
+
 
 
 
