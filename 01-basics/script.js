@@ -149,13 +149,60 @@ y = 3
 // let text = "Please locate where 'locate' occurs!";
 // text.search(/locate/);
 
-//match method find part of string and return them into array it can used regexp
+//==> match method find part of string and return them into array it can used regexp
 //If a regular expression does not include the g modifier (global search), match give output like
 //  match object it is a special type of array give extra information ,  
 // match() will return only the first match in the string.
-let match_var = "The rain in SPAIN stays mainly in the plain" ;
-let result = match_var.matchAll("ain")
-console.log([...result]);
+
+// let match_var = "The rain in SPAIN stays mainly in the plain" ;
+//  console.log(match_var.match("ain"));
+ 
+//
+//==>iterator is  a tool in javascript that allow to go through in each item one by one in a collection like
+//  array,string ,object etc
+// Deep technical Defination 
+//An iterator is a special object that has a .next() method.
+// Each time you call .next(), it gives you the next value in the sequence and tells you if it’s done.
+// iterator give value step bt step
+// Where we use Iterators:
+// In loops: for...of uses iterators
+// In methods like: .matchAll(), Map, Set
+// When working with Generators (advanced topic)
+// we cause  iterator manually
+
+
+// let score = "The rain in SPAIN stays mainly in the plain"
+// let result = score[Symbol.iterator]();
+// console.log(result.next());
+// console.log(result.next());
+// console.log(result.next());
+
+
+// iterator is lazy tool gives valus one by one using .next()
+//Because an iterator is lazy — it doesn’t give you everything immediately.
+// You have 2 ways to use it:
+//They're used in loops (for...of) and can be converted to arrays
+
+// use in for..of
+
+// for(let char of "hi"){
+//   console.log(char);
+  
+// }
+
+//using spread mean coverting to array 
+
+// let name = "hello"
+// let result = [...name]
+//console.log(result);
+
+
+let arr = ["hello" , "good"]
+console.log(arr);
+
+
+
+
 
 
 
