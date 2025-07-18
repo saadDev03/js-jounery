@@ -1,3 +1,40 @@
+//******************** Datatypes  ********************************* */
+//==>datatype tell the javascript  which type of vlua the vriable hold
+//==> string "abc"
+//==> number 2 to power 53
+//==> boolean 
+//==> undefind
+//==> null
+//==> bigint / n
+//==>Symbol
+//==> object / object has teo type built-in , user defined 
+
+//==>  to acces data in varaible in this base datatype has two  categories primitive  , non-premitive
+
+
+//***************************Primitive**************************************** */
+
+//==> javascript save program in memeory so it has two type stack ,heap 
+
+// stack memory (primmitive)  it store simple value  
+// it store value directly 
+// Each variable has its own memory location  
+// it store in stack memeory
+// changing one variable does not effect other
+// it compare value 
+// it copy the direct value 
+
+let x  = 4 ; 
+y = x
+y = 3
+console.log(y);
+
+
+// heap memory (non-primitive) 
+// it store the reference
+// Each variable holds a reference to the same memory location.” 
+// it compare reference
+
 let  obj1 = {
     name :  "ali" ,
     address : "lahore"
@@ -10,31 +47,19 @@ obj2 = obj1
 
 obj2.name = "asghar " 
 
-let x  = 4 ; 
-y = x
-y = 3
 
 
 
 
+//***************** String Template ,Template Literals ***************************** */
+//==> string written  inside `` are tempelate string or template literal (``)  backticks 
+//==> in backticks there a  string interpolation process and placeholder we can inserted varaible and expression into string  
+//==> in backticks we can do not use /n for  we line 
+//==> backticks allow to both single an double quotation inside string   `  "good" ' bye'     `
 
+// let str = " good bye "
+// console.log(`good  ${str} `);
 
-// stack memory (primmitive)  it store simple value  
-// it store value directly 
-// Each variable has its own memory location  
-// it store in stack memeory
-// changing one variable does not effect other
-// it compare value 
-// it copy the direct value 
-
-// heap memory (non-primitive) 
-// it store the reference
-// Each variable holds a reference to the same memory location.” 
-// it compare reference
-//************************************************************************ */
-// string written  inside `` are tempelate string or template literal (``)  backticks 
-// in backticks there a  string interpolation process and placeholder we can inserted varaible and expression into string  
-// in backticks we can do not use /n for nwe line 
 //++++++++++++++++++++++++++++++++++++++++++++++++//
 //string-Method//
 //A method is a function that is stored inside an object and is used to perform an action on that object.
@@ -174,8 +199,18 @@ y = 3
 //     console.log(name.isWellFormed(name));
     
 
-//
+//==> toWellFormed() is used to check the string if the string is broken and lone surrogates it replace them  
+// into Unicode replacement character (� ) .
 
+
+// let replace = "hello  \uD800 "
+// console.log(replace.toWellFormed());
+
+//==> trim is used to remove white space before and after string new line not middle space  
+// it has  trimstart , trim end shorthand trim() 
+
+// let score = "  good    "
+// console.log(score.trim());
 
 
 
@@ -188,7 +223,8 @@ y = 3
 
 // let text =    "hello"    ;
 
-//  console.log(text.padStart(8 , "add")) ;
+//  console.log(text.padStart(8 , "wed"));
+ 
 
 
 // let text =    "hello"    ;
@@ -198,39 +234,47 @@ y = 3
 // ==> repaet method repeat the string multiple times 
 
 // let rep = "abc"  ;
-// console.log(rep.repeat("abc"));
+// console.log(rep.repeat(5));
+
 
 //==> replace method it can  find the part of  string and change it something else ti has two parameter (search value , new value) 
 // it can  only change the first match 
 
 
-// let replace = "hellhellhello" ;
-// console.log(rep;ace.replace( "hell" , "P") );
+// let repo = "good , good , bye "
+// console.log( repo.replace("good " , "g"));
+
+//==>   To replace case insensitive, use a regular expression with an /i flag  we can use /g
+
+// let  logged  = "Hello , hello, good , dof"
+// console.log(logged.replace(/hello/i , "bye"));
 
 
-//  the replaceAll it can change all match
+//==> replaceall() allow to replace all matches we can also use regular expression  
 
-// let replace = "hellhellhello" ;
-// console.log(replace.replaceAll( "hell" , "P") );
+//     let match = "hello , hello , hello , good , bye"
+// console.log(match.replaceAll(/hello/g , "g"));
+
+
+
+
 
 // ==> split method is used to convert string into array based on "space" , "," , "e" space , symbol , character split mean  brak 
 // the string into smaller  part and put them  into  the array it has two parameter (seperator , lenght) lenght mean how many
-// value ti return 
-
-// let spli_string = "heelo  , byy , word"
-// console.log(spli_string.split("," , 3));
-
-// ==> include is used to check if a string contain a word , letter or a part it return true or false 
+// value it return 
 
 
-// let score = "ten , tewenty"
+// let swap = "hello , bye"
+// console.log(swap.split("," , 4 ));
 
-// console.log(score.includes("good"));
+
 
 //++++++++++++++++++++++++++++++++++++Sting Search Method++++++++++++++++++++++++++++++++++++++++++++++++++++++++// 
 //==> indexof check left to right and gives the first mathing posion 
-// let var_name = "hello ,hello" ;
-// console.log(var_name.indexOf("h"));
+
+// let something = "helo , hello , bad"
+// console.log(something.indexOf("h"));
+
 
 //==> it chech from right to left and give last matching position
 // let last = "back ,bakward"
@@ -239,8 +283,9 @@ y = 3
 //==.SEARCH METHOD it check left to right and give position of first match it more powerful than index it can also 
 //  regular  expression to search  
  
-// let text = "Please locate where 'locate' occurs!";
-// text.search(/locate/);
+// let text = "Please, locate ,where,locate, occurs!";
+// console.log(text.search(/Locate/i));
+
 
 //==> match method find part of string and return them into array it can used regexp
 //If a regular expression does not include the g modifier (global search), match give output like
@@ -248,7 +293,8 @@ y = 3
 // match() will return only the first match in the string.
 
 // let match_var = "The rain in SPAIN stays mainly in the plain" ;
-//  console.log(match_var.match("ain"));
+//  console.log(match_var.match(/ain/g));
+ 
  
 //==> matchall() return an iterator of all matches of  a rugelar exp in string 
 //==>iterator is  a tool in javascript that allow to go through in each item one by one in a collection like
@@ -290,25 +336,23 @@ y = 3
 //console.log(result);
 
 // using matchall() return an iterator 
-// when using manually it an the reult is iterator it give value but exta info because using .matchall and done: true/false
+// when using manually  so the result  is iterator object  it give value but exta info because using .matchall and done: true/false
 // when when we use loop it give special array like object 
 // when  convert to array  it give array  so it is  array You are using the spread syntax, which 
 // pulls each match out of the iterator, and puts them into an array.
 
 
 //  let arr = "the rainy dar the  rain and rain in lahore is full of rain" ;
-//  let result = arr.matchAll(/r/g)
-//  console.log(result.next());
+//   let result = arr.matchAll(/ain/g)
 
  
-
-// for(let match of result){
-//   console.log(match);
+//  for(let match of result){
+//    console.log(match);
   
-// }
+//  }
 
 
-// console.log([...result]);
+//  console.log([...result]);
 
 
 // include give true or false if the string has the  specified value 
