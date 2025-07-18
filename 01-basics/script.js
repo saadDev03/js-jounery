@@ -58,6 +58,7 @@ y = 3
 // Why?	                           Because methods only work on objects, and strings are primitives
 // Is the method responsible?	   ❌ No. The method doesn't wrap anything — JavaScript does it 
 
+
 //charAt() is a method because it is a function attached to the string object.
 
 //A method is a function that belongs to an object (like a string, array, etc.).
@@ -81,11 +82,103 @@ y = 3
 // How to call	        Just use the name: greet()	                           Use the object: person.sayHello()
 // Example	            function greet() { }	                                  person.sayHello = function() { }
 
-//Metod for extacting charatcter charat ,charcodeat, charcodepoint , at '
-// For extarting part slice , substring, substr(old)==> slice, it cancont swap the value , it support negative value   , substing it swap the value ,
-//  if give negative value javascript covert to zero automatically
-// it is same as slice it take two parameter the start position and the differece is the second parameter take lenght of exerted par  
-//Length means how many characters to take — not where to stop.
+//==>Metod for extacting charatcter charat ,charcodeat, charcodepoint , at '
+// it extract tha char  at that posiotion
+
+// let val = "httlo"
+// console.log(val.charAt(2));
+
+//==> it extact the unicide of char at position
+
+//  let val = "httlo"
+//  console.log(val.charCodeAt(2));
+
+//==> it extact the unicide of char at position and emoji 
+
+//  let val = "httlo"
+//  console.log(val.codePointAt(4));
+
+// it extract tha char  at that posiotion but it support neg value 
+//  let val = "httlo"
+//  console.log(val.at(-4));
+
+//==> properpty[] it is same as array but it work different we cannot change the value we can access
+
+
+// let acces = "javavscript"
+// // acces[0] = "h" ==>  it canonot work string is immutable
+// console.log(acces[0]); 
+// console.log(acces);
+
+
+
+
+
+
+//==> For extarting part slice , substring, substr(old)==> slice, it cancont swap the value
+//==>  , it support negative value   , substing it swap the value ,
+
+
+
+
+//==> For extarting part of string it has two parameter star  position , end position end not included
+
+
+// let score = "hello world bye "
+// console.log(score.slice( -1 , 5));
+
+//==>For extarting part of string it has two parameter star  position , end position end not included but
+//  when can swap value and it can support negative value  it javascript convert to zero
+
+// let score = "hello world bye "
+// console.log(score.substring(-1, 3));
+
+
+//==>it is same as slice but it has two parameter star position and lenght 
+//==>Length means how many characters to take — not where to stop.
+
+// let score = "hello world bye "
+//  console.log(score.substr(4 , 7));
+
+
+//==> concat() is used to join two string
+
+// let name = "good"
+// console.log("helolo" .concat( name));
+
+
+//==> touppercase()  , tolowercase()
+//  upppercase() method is used to conver all alphbet character to uppercase
+
+// let upper = "good"
+// console.log(upper.toUpperCase());
+
+
+//==>  tolowercase is used to convert all alphbet character to loewercase
+
+//  let upper = "Good"
+// console.log(upper.toLowerCase());
+
+
+ //==> .isWellFormed() return true if the string is well formed otherwise it return false 
+ //  A string is not well formed if it contains lone surrogates. and return false 
+ //==> javascript saves text into memmory in unicode 0,1 like t has unicode 123  so emoji use two unicode pair
+ //  are /ud4545/w4354354 so first is high surrogates and second low surrogates 
+
+
+
+    // let name = "heelo"
+    // console.log(name.isWellFormed(name));
+    
+//  let name = "heelo  \uD800" ;
+//     console.log(name.isWellFormed(name));
+    
+
+//
+
+
+
+
 // ==> padstart is used to add extra  text before of string (lenght , "string")
 // padend is used to add extra text after of string 
 //padding mean addind extra character to a string 
