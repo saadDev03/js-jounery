@@ -157,7 +157,7 @@ y = 3
 // let match_var = "The rain in SPAIN stays mainly in the plain" ;
 //  console.log(match_var.match("ain"));
  
-//
+//==> matchall() return an iterator of all matches of  a rugelar exp in string 
 //==>iterator is  a tool in javascript that allow to go through in each item one by one in a collection like
 //  array,string ,object etc
 // Deep technical Defination 
@@ -196,53 +196,59 @@ y = 3
 // let result = [...name]
 //console.log(result);
 
-
-let arr = ["hello" , "good"]
-console.log(arr);
-
-
-
-
+// using matchall() return an iterator 
+// when using manually it an the reult is iterator it give value but exta info because using .matchall and done: true/false
+// when when we use loop it give special array like object 
+// when  convert to array  it give array  so it is  array You are using the spread syntax, which 
+// pulls each match out of the iterator, and puts them into an array.
 
 
-
-
-
-
-
-
-
-
-
-  //+++++++++++++++++++++++++++++++FUNCTON++++++++++++++++++++++++++++++++++++// 
-  //FUNCTION is block of code that perform a particular task when we call it 
-   
-// Built-in Function
-// A function that is already provided by JavaScript.
-// console.log("hello");
-// "abc".toUpperCase()
-// [a ,b ,c].push(b)
-// alert("danger")
-
-// User-defined Function
-// A function that you create yourself.
-//parameter A parameter is a variable in a function definition that receives a value.
-//An argument is the actual value you pass to a function when calling or invoked  it.
- 
-
-
-//  function sum( x , y ) { 
-//       return  x + y ;
-      
-      
-     
-//  }
-
-//   let  value = sum(55 , 567) ;
-  
+//  let arr = "the rainy dar the  rain and rain in lahore is full of rain" ;
+//  let result = arr.matchAll(/r/g)
+//  console.log(result.next());
 
  
+
+// for(let match of result){
+//   console.log(match);
   
+// }
+
+
+// console.log([...result]);
+
+
+// include give true or false if the string has the  specified value 
+
+// let = score = "the good day"
+// console.log(score.includes("good"));
+
+// ==> start with() return true if the string has specified value 
+//==>lenght mean check the first 12 char startswith  you
+
+
+// let game = "You are using the spread syntax, which pulls each match out of the iterator, and puts them into an array."
+// console.log(game.startsWith("You"));
+// console.log(game.startsWith("You" , 12));
+
+
+//==> endWith() return true if the string end with specified value 
+//==> lenght mean check the first 12 char end with you
+
+//  let game = "You are using the spread syntax, which pulls each match out of the iterator, and puts them into an array."
+// console.log(game.endsWith("array."));
+// console.log(game.endsWith("You" , 12));
+
+
+
+
+
+
+
+
+
+
+ 
 
 
  
